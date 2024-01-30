@@ -4,3 +4,36 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+    --bg-image: url(../images/background-dark.png);
+    --themes-background: #000;
+    --themes-main-color:#00CC14;
+    --bd-color-strat: #007f0c;
+    --bd-color-end: #004306;
+    --lable-color: color: rgb(0, 204,	20, 0.5);
+    --stroke-color: 1px rgb(0, 0, 0, 0.5);
+    --themes-main-color-trans: rgb(0, 204, 20, 0.6);
+    --color-var: #00CC14;
+    --main-body-color:red;
+    --like-contour:#00CC14;
+    --like-main-body:#000;
+
+
+  }
+
+  :root.theme-light {
+    --bg-image: url(../images/background-light.png);
+    --themes-background: #FFF;
+    --themes-main-color: #000;
+    --bd-color-strat: #e7e7e7;
+    --bd-color-end: #1a1a1a;
+    --lable-color: color: rgb(0 0 0 / 0.5);
+    --stroke-color: 1px rgb(255, 255, 255, 0.5);
+    --themes-main-color-trans: rgb(0, 0, 0, 0.6);
+    --color-var: #FFF;
+    --main-body-color:red;
+    --like-contour:#000;
+    --like-main-body:#fff;
+}
+
+
