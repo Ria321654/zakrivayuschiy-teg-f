@@ -234,7 +234,6 @@
   -webkit-text-stroke: var(--stroke-color);
   opacity: 1.5;
   mix-blend-mode: hard-light;  
-  text-transform: uppercase;
 }
 
 .leibl-trasform {
@@ -572,13 +571,13 @@
     font-size: 14px;
   }
   .header-blok {
-    width: 375px;
+    width: 374px;
   }
   .content {
     gap: 50px;
   }
   .card {
-    width: 375px;
+    width: 374px;
   }
   .card-one {
     height: 758px;
@@ -689,14 +688,13 @@
 
   }
   .floppy-img {
-    inline-size: 28px;
-    block-size: 28px;
+    inline-size: 90px;
+    block-size: 40px;
   }
   .dialog {
     background-color: var(--themes-background);
     color: var(--themes-main-color);
     padding: 30px 40px;
-    display: flex;
     width: 359px;
     padding: 30px 38px;
     flex-direction: column;
