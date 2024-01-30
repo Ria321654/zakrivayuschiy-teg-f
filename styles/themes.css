@@ -21,6 +21,23 @@
 
   }
 
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg-image: url(../images/background-light.png);
+    --themes-background: #FFF;
+    --themes-main-color: #000;
+    --bd-color-strat: #e7e7e7;
+    --bd-color-end: #1a1a1a;
+    --lable-color: color: rgb(0 0 0 / 0.5);
+    --stroke-color: 1px rgb(255, 255, 255, 0.5);
+    --themes-main-color-trans: rgb(0, 0, 0, 0.6);
+    --color-var: #FFF;
+    --main-body-color:red;
+    --like-contour:#000;
+    --like-main-body:#fff;
+    }
+  }
+
   :root.theme-light {
     --bg-image: url(../images/background-light.png);
     --themes-background: #FFF;

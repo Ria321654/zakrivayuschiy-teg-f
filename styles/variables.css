@@ -2,8 +2,17 @@
 :root {
     --accent-font: 'PressStart2P';
     --main-font: 'Inter';
-    --themes-background: #FFF;
-    --themes-main-color: #000;
+    --themes-background: #000;
+    --themes-main-color:#00CC14;
+    --bd-color-strat: #007f0c;
+    --bd-color-end: #004306;
+    --lable-color: color: rgb(0, 204,	20, 0.5);
+    --stroke-color: 1px rgb(0, 0, 0, 0.5);
+    --themes-main-color-trans: rgb(0, 204, 20, 0.6);
+    --color-var: #00CC14;
+    --main-body-color:red;
+    --like-contour:#00CC14;
+    --like-main-body:#000;
     --bg-image: url(../images/background-light.png);
   }
   
