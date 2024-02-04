@@ -13,6 +13,7 @@
     --main-body-color:red;
     --like-contour:#00CC14;
     --like-main-body:#000;
-    --bg-image: url(../images/background-light.png);
+    --accent-font: 'PressStart2P';
+    --main-font: 'Inter';
   }
   

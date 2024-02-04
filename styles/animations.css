@@ -16,34 +16,42 @@
     0% {
         margin-left: -15px;
     }
+
     100% {
     }
 }
+
 @keyframes slowly {
     0% {
         background-color: var(--themes-background);
     }
+
     100% {
         background-color: var(--themes-main-color);
     }
 }
+
 @keyframes like {
     0% {
       transform: scale(1);
       transform-origin: center;
     }
+
     100% {
       transform: scale(1.5);
       transform-origin: center;
     }
 }
+
 @keyframes spaks {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+    
     100% {
         opacity: 0;
     }
@@ -51,59 +59,52 @@
 
 .like-icon .main-body {
     fill: transparent;
-    transition: fill 0.3s ease-in-out, opacity 0.3s;
-    opacity: 0.5;
+    transition: fill 0.3s ease-in-out;
   }
   
   .like-icon:hover .main-body  {
     fill: #000;
-    opacity: 1;
+    transition: fill 0.3s 0.05s linear; 
+    /* для откатов нужнен  transition там где написанно замечание в коде */
   }
   
   .like-icon .core {
     fill: transparent;
-    transition: fill 0.3s ease-in-out, opacity 0.3s;
-    opacity: 0.5;
+    transition:  fill 0.3s linear 0.06s;
   }
   
   .like-icon:hover .core {
     fill: #000000;
-    transition: fill 0.3s ease-in-out 0.03s;
-    opacity: 1;
+    transition: fill 0.3s linear ;
   }
   
   
   .like-icon:active .main-body  {
     fill: red;
-    opacity: 1;
   }
   
   .like-icon:active .core {
     fill: red;
-    transition: fill 0.3s ease-in-out 0.03s;
-    opacity: 1;
+    transition: fill 0.3s linear 0.03s;
   }
   
 .core:active {
     transition-delay: 0.03s;
     fill: red;
-    opacity: 0.5;
 }
 
 .like-icon:not(:hover) .core {
     transition-delay: 0.03s;
-    opacity: 0.5;
 }
   
 .like-icon.is-liked .contour {
-    transition: fill 0.3s ease-in-out 0.06s;
+    transition: fill 0.3s linear 0.06s;
     fill: red;
-    opacity: 1;
 }
   
 .like-icon.is-liked .main-body {
   fill: red;
-  transition:  opacity 0.3s linear;
+  transition:  opacity 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
@@ -111,12 +112,11 @@
   transition:  opacity 0.3s linear;
 }
 
-
+/* 
 .like-icon .heart {
-  transform: scale(1);
   transition: transform 0.3s ease-in-out;
 }
-  
+   */
 .like-icon.is-liked .heart {
   animation: like 0.3s ease-in alternate 0.1s ;
   transform: scale(1);
@@ -124,4 +124,14 @@
 
 .like-icon.is-liked .sparks {
     animation: spaks 0.3s ease-in 0.3s 1 alternate;
+}
+
+.main-body {
+  fill: none;
+  transition: fill 0.3s 0.05s;
+}
+.core {
+  fill: none;
+  transition: fill 0.3s, opacity 0.3s;
+  opacity: 1;
 }
