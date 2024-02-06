@@ -2,18 +2,30 @@
 :root {
     --accent-font: 'PressStart2P';
     --main-font: 'Inter';
+    --font-weight: 465;
     --themes-background: #000;
     --themes-main-color:#00CC14;
     --bd-color-strat: #007f0c;
     --bd-color-end: #004306;
     --lable-color: color: rgb(0, 204,	20, 0.5);
     --stroke-color: 1px rgb(0, 0, 0, 0.5);
-    --themes-main-color-trans: rgb(0, 204, 20, 0.6);
     --color-var: #00CC14;
     --main-body-color:red;
     --like-contour:#00CC14;
     --like-main-body:#000;
-    --accent-font: 'PressStart2P';
-    --main-font: 'Inter';
+    --bk-image:repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      transparent  2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent  0 2px,
+      transparent 2px 4px
+      ),
+      linear-gradient(
+      to bottom,
+      #007f0c, #004306
+      ); 
   }
   

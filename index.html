@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./styles/theme-menu__button.css">
     <link href="./images/favicon.png" rel="apple-touch-icon" />
     <link href="./svg/favicon.svg" rel="icon" type="image/svg+xml" />
 
@@ -17,7 +18,7 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header section ">
       <div class="header-blok">
         <h1 class="title">&lt;/HTML&gt;</h1>
         <h1 class="title-small">закрывающий тег</h1>
@@ -44,7 +45,7 @@
       </div>
     </header>
 
-    <main class="content">
+    <main class="content section ">
       <section class="card card-nofilter">
         <h2 class="card-title card-title-nofilter">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <a class="card-img__main">
@@ -57,7 +58,7 @@
           </p>
           <p class="content-main">Место для ваших воспоминаний о начале обучения.</p>
         </div>
-        <div class="buttons">
+        <div class="buttons buttons-grayscale">
           <button type="button" class="like-button card__icon-button">
             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
@@ -108,8 +109,8 @@
           </p>
           <p class="content-main">Место для ваших воспоминаний о начале первого спринта.</p>
         </div>
-        <div class="buttons buttons-grayscale">
-          <button type="button" class="like-button card__icon-button">
+        <div class="buttons  buttons-grayscale">
+          <button type="button " class="like-button card__icon-button">
             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
               <g class="heart">
                 <path
@@ -405,7 +406,7 @@
           <samp class="leibl">&lt;experience&gt;</samp>
           <img class="card-img img-more__filters" src="./images/image(8).png" alt="машина" />
         </a>
-        <div class="card-content">
+        <div class="card-content card-content-more__filters">
           <p class="content-main">
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно
             меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.
@@ -451,7 +452,7 @@
       </section>
       <section class="save">
         <button type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id" class="button-body footer-button">
-          <svg class="floppy-img" viewBox="0 0 45 40" aria-hidden="true">
+          <svg class="floppy-img floppy-img__save" viewBox="0 0 45 40" aria-hidden="true">
             <use href="./svg/floppy/image.svg#floppy"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
