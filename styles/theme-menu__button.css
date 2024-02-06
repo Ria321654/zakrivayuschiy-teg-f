@@ -11,7 +11,6 @@
   font-family: var(--accent-font), sans-serif;
 }
 
-
 .theme-menu__button:focus {
   outline: none;
   opacity: 0.5;
@@ -30,7 +29,6 @@
   animation: shift 0.5s ease-in-out alternate infinite;
   left: -5px;
   top: 0;
-
 }
 
 .theme-menu__button::after {
@@ -43,12 +41,10 @@
   transition: inline-size 0.3s ease, background-color 0.5s;
 }
 
-
 .theme-menu__button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
-
 
 .theme-menu__button:focus-visible::after {
   inline-size: 100%;
@@ -57,19 +53,9 @@
 
 .theme-menu__button:enabled:hover::after {
   width: 100%;
-  background-color: var(--themes-main-color-trans);
+  background-color: var(--themes-main-color);
 }
-
 
 .theme-menu__button:enabled:hover {
   opacity: 0.5;
 } 
-
- /* .theme-menu__button:enabled:after {
-  content: "";
-  display: block;
-  width: 0%;
-  min-height: 3px;
-  background-color: var(--themes-main-color);
-  transition: width 300ms;
-} */

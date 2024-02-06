@@ -18,6 +18,7 @@
   --main-body-color:red;
   --like-contour:#00CC14;
   --like-main-body:#000;
+  --lable-contounr:#00CC14;
     --bk-image:repeating-linear-gradient(
         to right,
         #000 0 2px,
@@ -49,6 +50,7 @@
     --color-var: #FFF;
     --main-body-color:red;
     --like-contour:#000;
+    --lable-contounr:#fff;
     --like-main-body:#fff;
     --bk-image:repeating-linear-gradient(
       to right,
@@ -76,11 +78,11 @@
     --bd-color-strat: #e7e7e7;
     --bd-color-end: #1a1a1a;
     --lable-color: color: rgb(0 0 0 / 0.5);
-    --stroke-color: 1px rgb(255, 255, 255, 0.5);
     --color-var: #FFF;
     --main-body-color:red;
     --like-contour:#000;
     --like-main-body:#fff;
+    --lable-contounr:#fff;
     --bk-image:repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
