@@ -1,5 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+  --headings-font:785;
     --accent-font: 'PressStart2P';
     --main-font: 'Inter';
     --font-weight: 465;
@@ -10,9 +11,10 @@
     --lable-color: color: rgb(0, 204,	20, 0.5);
     --stroke-color: 1px rgb(0, 0, 0, 0.5);
     --color-var: #00CC14;
-    --main-body-color:red;
+    --main-body-color:#00CC14;
     --like-contour:#00CC14;
     --like-main-body:#000;
+    --lable-contounr:#000;
     --bk-image:repeating-linear-gradient(
       to right,
       #000 0 2px,
