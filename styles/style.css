@@ -46,6 +46,7 @@
   background: var(--themes-background);
   flex-shrink: 0;
   justify-content: center;
+  block-size: clamp(20.1875rem, 14.3541rem + 13.9932vw, 22.75rem);
 }
 
 .title {
@@ -57,7 +58,7 @@
   line-height: normal;
   margin-left: 5px;
   margin-top: 134px;
-  font-size: clamp(4.163rem, 2.0609rem + 1.9023vw, 4.663rem);
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
 }
 
@@ -78,6 +79,7 @@
   line-height: normal;
   text-transform: uppercase;
   margin-top: 19px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
 .theme-menu__list {
@@ -101,13 +103,12 @@
   display: flex;
 }
 
-.card__icon-button:focus {
+.like-button:focus {
   outline: none;
 }
 
-.card__icon-button:focus-visible {
+.like-button:focus-visible {
   outline: 2px solid var(--themes-main-color);
-  
 }
 
 .content {
@@ -135,7 +136,6 @@
   flex-shrink: 0;
   color: var(--themes-main-color);
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--headings-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -171,7 +171,7 @@
 }
 
 .leibl {
-  margin-top: 23px;
+  margin-top: 25px;
   margin-right: 25px;
   z-index: 1;
   color: var(--themes-main-color);
@@ -182,10 +182,15 @@
   line-height: normal;
   opacity: 0.5;
   position: absolute;
-  text-shadow: 0 0 2px var(--lable-contounr);
   top: 0;
   right: 0;
   background-blend-mode: hard-light;
+  text-shadow:
+  -1px 0 var(--stroke-color), 
+  0 1px var(--stroke-color), 
+  1px 0 var(--stroke-color), 
+  0 -1px var(--stroke-color);
+  position: absolute;
 }
 
 .leibl-trasform {
@@ -228,6 +233,9 @@
 .card__like-button {
   inline-size: 130px;
   block-size: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-body {
@@ -342,6 +350,9 @@
   background-color: transparent;
   border: transparent;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heart {
@@ -355,7 +366,7 @@
   display: flex;
 }
 
-.card__icon-button:focus {
+.like-icon:focus {
   outline: none;
 }
 
@@ -456,6 +467,17 @@
   display: inline-block;
   color: var(--color-var);
   cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.button-save:focus {
+  outline: none;
+}
+
+.button-save:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--themes-main-color);
 }
 
 .button-form {
@@ -505,8 +527,7 @@
 @media (min-width: 376px) and (max-width: 380px) {
   .section {
     display: flex;
-    align-self: self-end;
-    inline-size: auto;
+    
   }
   .card-img {
     inline-size: clamp(380px, 100%, 100vw);

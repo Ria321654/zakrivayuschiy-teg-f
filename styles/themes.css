@@ -14,12 +14,12 @@
   --bd-color-strat: #007f0c;
   --bd-color-end: #004306;
   --lable-color: color: rgb(0, 204,	20, 0.5);
-  --stroke-color: 1px rgb(0, 0, 0, 0.5);
   --color-var: #00CC14;
   --main-body-color:#00CC14;
   --like-contour:#00CC14;
   --like-main-body:#000;
   --lable-contounr:#000;
+  --stroke-color: rgb(0 0 0 / 0.6);
     --bk-image:repeating-linear-gradient(
         to right,
         #000 0 2px,
@@ -38,7 +38,7 @@
 
   @media (prefers-color-scheme: light) {
     :root {
-    --headings-font: 785;
+    --headings-font: 700;
     --accent-font: 'PressStart2P';
     --main-font: 'Inter';
     --font-weight: 400;
@@ -47,11 +47,11 @@
     --bd-color-strat: #e7e7e7;
     --bd-color-end: #1a1a1a;
     --lable-color: color: rgb(0 0 0 / 0.5);
-    --stroke-color: 1px rgb(255, 255, 255, 0.5);
     --color-var: #FFF;
     --main-body-color:red;
     --like-contour:#000;
     --lable-contounr:#fff;
+    --stroke-color: rgb(255 255 255 / 0.6);
     --like-main-body:#fff;
     --bk-image:repeating-linear-gradient(
       to right,
@@ -74,7 +74,7 @@
     --headings-font: 700;
     --accent-font: 'PressStart2P';
     --main-font: 'Inter';
-    --font-weight: 465;
+    --font-weight: 400;
     --themes-background: #FFF;
     --themes-main-color: #000;
     --bd-color-strat: #e7e7e7;
@@ -85,6 +85,7 @@
     --like-contour:#000;
     --like-main-body:#fff;
     --lable-contounr:#fff;
+    --stroke-color: rgb(255 255 255 / 0.6);
     --bk-image:repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
