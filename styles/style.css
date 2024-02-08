@@ -306,10 +306,11 @@
 .theme-menu__button:disabled::before {
   pointer-events: none;
   content: "▶";
-  position: absolute;
-  animation: shift 0.5s ease-in-out alternate infinite;
-  left: -13px;
-  top: 0;
+  position:absolute;
+  left: -16px;
+  animation: shift 0.5s infinite ease-in-out;
+  animation-direction: alternate;
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
