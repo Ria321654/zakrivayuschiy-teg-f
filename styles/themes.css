@@ -16,6 +16,7 @@
   --lable-color: color: rgb(0, 204,	20, 0.5);
   --color-var: #00CC14;
   --main-body-color:#00CC14;
+  --fill-color: #ff0000;
   --like-contour:#00CC14;
   --like-main-body:#000;
   --lable-contounr:#000;
@@ -53,6 +54,7 @@
     --lable-contounr:#fff;
     --stroke-color: rgb(255 255 255 / 0.6);
     --like-main-body:#fff;
+    --fill-color: #ff0000;
     --bk-image:repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
@@ -82,6 +84,7 @@
     --lable-color: color: rgb(0 0 0 / 0.5);
     --color-var: #FFF;
     --main-body-color:red;
+    --fill-color: #ff0000;
     --like-contour:#000;
     --like-main-body:#fff;
     --lable-contounr:#fff;

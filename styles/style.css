@@ -95,7 +95,7 @@
   background-color: transparent;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: border-color 0.3s ease;
+  transition: outline 0.3s ease;
   margin-right: 5px;
   align-items: center;
   align-content: center;
@@ -117,7 +117,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
-  gap: 50px;
+  gap: 49px;
 }
 
 .card {
@@ -316,6 +316,7 @@
   content: "▶";
   position:absolute;
   left: -16px;
+  top: 0;
   animation: shift 0.5s infinite ease-in-out;
   animation-direction: alternate;
   opacity: 0.6;
@@ -420,7 +421,7 @@
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
-  inline-size: 339px;
+  inline-size: 343px;
   fill: currentColor;
   margin-bottom: 100px;
 }
@@ -430,8 +431,6 @@
   color: var(--themes-main-color);
   padding: 30px;
   width: 357px;
-  height: 193px;
-
 }
 
 .dialog-conent {
@@ -471,14 +470,14 @@
   height: 100%;
 }
 
-.button-save:focus {
+/* .button-body:focus {
   outline: none;
 }
 
-.button-save:focus-visible {
+.button-body:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--themes-main-color);
-}
+} */
 
 .button-form {
   width: 290px;
@@ -514,8 +513,8 @@
 }
 
 .floppy-img__save {
-  inline-size: 21px;
-  block-size: 21px;
+  inline-size: 25px;
+  block-size: 25px;
 }
 .section {
   inline-size: clamp(320px, 100%, 100vw);
@@ -599,7 +598,6 @@
     background-color: var(--themes-background);
     color: var(--themes-main-color);
     width: 341px;
-    height: 195px;
     padding: 30px 38px;
     flex-direction: column;
     align-items: center;
