@@ -57,7 +57,7 @@
 
 .core {
   fill: transparent;
-  transition: fill 0.3s 0.03 linear;
+  transition: fill 0.3s 0.03s linear;
 }  
 
 .contour {
